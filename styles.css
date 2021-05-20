@@ -1,0 +1,94 @@
+/* Définition de la police */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+header 
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#titre_principal
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#logo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+#logo img
+{
+	width: 120px;
+	height: 60px;
+}
+/* Navigation */
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li
+{
+	margin-right: 15px
+}
+
+nav a
+{
+	color: #0065FC;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+/* Champ de recherche */
+
+.fa-map-marker-alt
+{
+	background-color: #F2F2F2;
+	border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 20px;
+    padding-top: 18px;
+    padding-bottom: 22px;
+}
+
+#maRecherche
+{
+	width: 240px;
+    padding-right: 0px;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border: 1px solid #F2F2F2;
+    font-size: 18px;
+    border-radius: 0;
+    appearance: none;
+}
+
+button
+{
+	padding: 20px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065FC;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+#champDeRecherche
+{
+	display: inline-block;
+}
