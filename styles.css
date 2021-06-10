@@ -90,6 +90,93 @@ nav a
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 80px;
 }}
+
+@media screen and (max-width: 767px)
+{header
+{
+	margin-left: 0px;
+    margin-right: 0px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{.title
+{
+	margin-bottom: 30px;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{nav
+{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 40px;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{#logo
+{
+	align-self: start;
+    position: relative;
+    left: 20px;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{.navHebergements a
+{
+	grid-column: 1;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{.navHebergements a, .navActivites a
+{
+	width: 100%;
+    grid-row: 2;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    top: 5px;
+    border-top: none;
+    padding-right: 0px;
+    padding-left: 0px;
+    display: grid;
+    justify-content: center;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 15px;
+    padding-top: 25px;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{.navActivites a
+{
+	grid-column: 2
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{.inscription a
+{
+	grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    bottom: 5px;
+    left: 40px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{.title
+{
+	margin-left: 17px;
+    margin-right: 20px;
+}	
+}
 /* Champ de recherche */
 
 .fa-map-marker-alt
@@ -119,7 +206,7 @@ nav a
     margin-right: 0px
 }
 
-button
+.buttonSearch
 {
 	padding: 20px;
     border: none;
@@ -135,6 +222,62 @@ button
 #champDeRecherche
 {
 	display: inline-block;
+}
+
+.loupe
+{
+	display: none;
+}
+
+@media screen and (max-width: 767px)
+{#champDeRecherche
+{
+	margin-left: 20px;
+}	
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px)
+{#maRecherche
+{
+	width: 70%;
+    max-width: 260px;
+    padding-left: 5%;
+}	
+}
+
+@media screen and (max-width: 767px)
+{.buttonSearch
+{
+	display: none;
+}	
+}
+
+@media screen and (max-width: 767px)
+{.loupe
+{
+	display: flex;
+}	
+}
+
+@media screen and (max-width: 767px)
+{.loupe
+{
+	border: none;
+    background-color: #0065fc;
+    z-index: 1;
+    border-radius: 15px;
+    padding: 19px;
+    color: white;
+    font-size: 18px;
+}	
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px)
+{.loupe
+{
+	position: relative;
+    right: 30px;
+}	
 }
 
 /* Filtres */
@@ -181,12 +324,66 @@ button
 	font-weight: bold;
 }
 
+.ecoFamilial, .romAnimaux
+{
+	display: flex;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1160px)
 {#filtres
 {
 	display: flex;
     flex-direction: column;
     align-items: baseline;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{#filtres
+{
+	margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{.ecoFamilial
+{
+	margin-bottom: 15px;
+    width: 100%;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{.romAnimaux
+{
+	display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{.ecoFamilial li
+{
+	margin-right: 10px;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{#filtres li
+{
+	font-size: 16px;
+}	
+}
+
+@media only screen and (min-width: 351px) and (max-width: 767px)
+{.romAnimaux li
+{
+	margin-bottom: 15px;
 }	
 }
 
@@ -213,6 +410,17 @@ button
     align-items: center;
     margin-right: 12px;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px)
+{#information
+{
+	display: flex;
+    align-items: baseline;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}	
 }
 
 /* Hébergements + populaires */
@@ -454,6 +662,82 @@ button
 	margin-bottom: 10px;
 }	
 }
+
+@media screen and (max-width: 767px)
+{#tousLesHebergements
+{
+	flex-direction: column-reverse;
+    margin-left: 0px;
+    margin-right: 20px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#hebergements
+{
+	width: 100%;
+    background-color: white;
+    margin-bottom: 8px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#hebergements h2
+{
+	margin-left: 10px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#hebergements ul
+{
+	grid-template-columns: 1fr;
+    margin-left: 0px;
+    margin-right: 0px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#hebergements li
+{
+	margin-bottom: 6px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#populaires
+{
+	width: 100%;
+    margin-left: 0px;
+    margin-right: 20px;
+    border-radius: 0px;
+    padding-bottom: 40px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#iconePopulaire
+{
+	margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#populaires ul
+{
+	margin-left: 0px;
+    margin-right: 0px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#populaires li
+{
+	margin-bottom: 5px;
+}	
+}
 /* Activités */
 
 #activity
@@ -597,6 +881,115 @@ button
 	margin-right: 50px;
 }	
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{.grandeActivite
+{
+	width: 100%;
+    margin-bottom: 30px;
+}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{#activites1, .grandeActivite
+{
+	margin-right: 0px;
+}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{.grandeActivite img, #columnActivity img
+{
+	height: 145px;
+}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{#columnActivity
+{
+	width: 100%;
+}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{.fortPomegues,.frioul,.dameGarde,.longchamp
+{
+	margin-bottom: 30px;
+}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{#columnActivity, #activites2
+{
+	margin-left: 0px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#activity
+{
+	margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 45px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#activity h2
+{
+	margin-bottom: 30px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#activites, #activites1, #activites2
+{
+	flex-direction: column;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#activites1, .grandeActivite
+{
+	margin-right: 0px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{.grandeActivite, #columnActivity
+{
+	width: 100%
+}	
+}
+
+@media screen and (max-width: 767px)
+{#activites2
+{
+	margin-right: 20px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#columnActivity, #activites2
+{
+	margin-left: 0px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{.grandeActivite img, #columnActivity img
+{
+	height: 145px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#activites li
+{
+	margin-bottom: 20px;
+
+}	
+}
 /* Footer */
 
 footer
@@ -647,6 +1040,36 @@ footer li
 	left: 30px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{footer
+{
+	margin-top: 0px;
+}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{#dispositionFooter
+{
+	width: 85%;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#dispositionFooter
+{
+	padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#assistance
+{
+	position: relative;
+    left: 0px;
+}	
+}
 /* Toutes les images */
 
 img
