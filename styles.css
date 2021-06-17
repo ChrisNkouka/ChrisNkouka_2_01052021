@@ -349,7 +349,6 @@ nav a
 @media only screen and (min-width: 351px) and (max-width: 767px)
 {#filtres
 {
-	margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -392,6 +391,14 @@ nav a
 {.romAnimaux li
 {
 	margin-bottom: 15px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#filtres ul
+{
+	padding-left: 0px;
+	flex-wrap: wrap;
 }	
 }
 
