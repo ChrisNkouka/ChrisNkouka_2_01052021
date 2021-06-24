@@ -97,6 +97,14 @@ nav a
 {
 	margin-left: 0px;
     margin-right: 0px;
+    flex-direction: column;
+}	
+}
+
+@media screen and (max-width: 767px)
+{#titre_principal
+{
+	width: 100%
 }	
 }
 
@@ -111,9 +119,16 @@ nav a
 {nav
 {
 	display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     grid-template-rows: 1fr;
-    margin-bottom: 40px;
+    width: 100%
+}	
+}
+
+@media screen and (max-width: 767px)
+{nav ul
+{
+	padding-left: 0
 }	
 }
 
@@ -123,6 +138,23 @@ nav a
 	align-self: start;
     position: relative;
     left: 20px;
+}	
+}
+
+@media screen and (max-width: 767px)
+{.navHebergements, .navActivites
+{
+	width: 100%;
+	margin-right: 0
+}	
+}
+
+@media screen and (max-width: 767px)
+{.inscription
+{
+	position: absolute;
+	top: 0;
+	right: 0;
 }	
 }
 
@@ -239,6 +271,7 @@ nav a
 {#champDeRecherche
 {
 	margin-left: 20px;
+	display: flex;
 }	
 }
 
@@ -1027,6 +1060,14 @@ nav a
 {#activites li
 {
 	margin-bottom: 20px;
+
+}	
+}
+
+@media screen and (max-width: 767px)
+{#activites ul
+{
+	display: block;
 
 }	
 }
