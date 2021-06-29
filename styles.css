@@ -370,6 +370,16 @@ nav a
 	display: flex;
 }
 
+.ecoFamilial li a:hover
+{
+	background-color: #0065FC
+}
+
+.romAnimaux li a:hover
+{
+	background-color: #0065FC
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1160px)
 {#filtres
 {
@@ -409,7 +419,7 @@ nav a
 @media only screen and (min-width: 351px) and (max-width: 767px)
 {.ecoFamilial li
 {
-	margin-right: 10px;
+	margin-right: -10px;
 }	
 }
 
