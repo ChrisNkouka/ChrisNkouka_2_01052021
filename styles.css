@@ -325,11 +325,11 @@ nav a
 {
 	display: flex;
 	flex-direction: row;
+	margin-top: 20px;
 }
 
 #filtres ul
 {
-	list-style-type: none;
 	display: flex;
 }
 
@@ -370,14 +370,19 @@ nav a
 	display: flex;
 }
 
-.ecoFamilial li a:hover
+.ecoFamilial a:hover
 {
 	background-color: #0065FC
 }
 
-.romAnimaux li a:hover
+.romAnimaux a:hover
 {
 	background-color: #0065FC
+}
+
+.ecoFamilial
+{
+	margin-left: 15px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
@@ -404,6 +409,7 @@ nav a
 {
 	margin-bottom: 15px;
     width: 100%;
+    margin-left: -10px;
 }	
 }
 
@@ -442,6 +448,14 @@ nav a
 {
 	padding-left: 0px;
 	flex-wrap: wrap;
+}	
+}
+
+@media screen and (max-width: 767px)
+{.romantique
+{
+	margin-bottom: 10px
+
 }	
 }
 
@@ -536,7 +550,7 @@ nav a
     margin: 15px;
 }
 
-#textHebergements
+.textHebergements
 {
 	margin-left: 10px;
 	margin-top: 5px;
@@ -562,7 +576,7 @@ nav a
 	color: black;
 }
 
-#star
+.star
 {
 	display: flex;
     align-items: center;
@@ -571,7 +585,7 @@ nav a
     margin-bottom: 5px;
 }
 
-#greyStar
+.greyStar
 {
 	color: #F2F2F2
 }
@@ -634,7 +648,7 @@ nav a
     height: 135px;
 }
 
-#textPopulaires
+.textPopulaires
 {
 	display: flex;
     flex-direction: column;
@@ -865,13 +879,13 @@ nav a
 	height: 390px
 }
 
-#activites li
+.grandeActivite, .petiteActivite
 {
 	background-color: white;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     box-shadow: 2px 7px 8px #d6d4d4;
-    list-style-type: none;
+    margin-bottom: 25px;
 }
 
 #activites h3
