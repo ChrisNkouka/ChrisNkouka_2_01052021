@@ -84,14 +84,6 @@ nav a
 	padding-top: 45px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1160px)
-{nav
-{
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-bottom: 80px;
-}}
-
 @media screen and (max-width: 767px)
 {header
 {
@@ -729,9 +721,15 @@ nav a
 {#populaires li
 {
 	display: flex;
-    flex-direction: column;
     width: 33%
 
+}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{#populaires a
+{
+	flex-direction: column;
 }	
 }
 
