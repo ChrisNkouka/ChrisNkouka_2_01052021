@@ -2,6 +2,7 @@
 body
 {
 	font-family: 'Raleway', sans-serif;
+    width: 100%;
 }
 /* Eléments de la page */
 
@@ -22,48 +23,51 @@ header
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{header
 {
-	margin-right: 50px;
-}}
+    header
+    {
+     margin-right: 50px;
+    }
+}
 
 #logo
 {
-	display: flex;
-	align-items: baseline;
-	flex-direction: row;
-	margin-bottom: 25px;
+ display: flex;
+ align-items: baseline;
+ flex-direction: row;
+ margin-bottom: 25px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#logo
 {
-	position: relative;
-	top: 15px;
-}	
+    #logo
+    {
+     position: relative;
+     top: 15px;
+ }	
 }
 #logo img
 {
-	width: 100px;
+ width: 100px;
 }
 
 .displayNone
 {
-	display: none;
+ display: none;
 }
 /* Navigation */
 
 nav ul
 {
-	display: flex;
-	list-style-type: none;
-    margin-bottom: 55px;
+ display: flex;
+ list-style-type: none;
+ margin-bottom: 55px;
 }
 
 nav li
 {
-	margin-right: 50px;
-	margin-top: 20px;
+ margin-right: 50px;
+ margin-top: 20px;
 }
 
 .navHebergements a,.navActivites a
@@ -85,122 +89,133 @@ nav a
 }
 
 @media screen and (max-width: 767px)
-{header
 {
-	margin-left: 0px;
-    margin-right: 0px;
-    flex-direction: column;
-}	
+    header
+    {
+     margin-left: 0px;
+     margin-right: 0px;
+     flex-direction: column;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#titre_principal
 {
-	width: 100%
-}	
+    #titre_principal
+    {
+     width: 100%
+    }	
 }
 
 @media screen and (max-width: 767px)
-{.title
 {
-	margin-bottom: 30px;
-}	
+    .title
+    {
+     margin-bottom: 30px;
+ }	
 }
 
-@media only screen and (min-width: 351px) and (max-width: 767px)
+@media only screen and (max-width: 767px)
 {nav
-{
-	display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr;
-    width: 100%
-}	
+    {
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: 1fr;
+     width: 100%
+ }	
 }
 
 @media screen and (max-width: 767px)
 {nav ul
-{
-	padding-left: 0
-}	
+    {
+     padding-left: 0
+ }	
 }
 
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{#logo
+@media only screen and (max-width: 767px)
 {
-	align-self: start;
-    position: relative;
-    left: 20px;
-}	
-}
-
-@media screen and (max-width: 767px)
-{.navHebergements, .navActivites
-{
-	width: 100%;
-	margin-right: 0
-}	
+    #logo
+    {
+     align-self: start;
+     position: relative;
+     margin-left: 20px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{.inscription
 {
-	position: absolute;
-	top: 0;
-	right: 0;
-}	
-}
-
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{.navHebergements a
-{
-	grid-column: 1;
-}	
-}
-
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{.navHebergements a, .navActivites a
-{
-	width: 100%;
-    grid-row: 2;
-    position: relative;
-    left: 0px;
-    bottom: 0px;
-    top: 5px;
-    border-top: none;
-    padding-right: 0px;
-    padding-left: 0px;
-    display: grid;
-    justify-content: center;
-    border-bottom: 3px solid #F2F2F2;
-    padding-bottom: 15px;
-    padding-top: 25px;
-}	
-}
-
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{.navActivites a
-{
-	grid-column: 2
-}	
-}
-
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{.inscription a
-{
-	grid-column: 2;
-    grid-row: 1;
-    position: relative;
-    bottom: 5px;
-    left: 40px;
-}	
+    .navHebergements, .navActivites
+    {
+     width: 100%;
+     margin-right: 0
+ }	
 }
 
 @media screen and (max-width: 767px)
-{.title
 {
-	margin-left: 17px;
-    margin-right: 20px;
-}	
+    .inscription
+    {
+     position: absolute;
+     top: 0;
+     right: 0;
+ }	
+}
+
+@media only screen and (max-width: 767px)
+{
+    .navHebergements a
+    {
+     grid-column: 1;
+ }	
+}
+
+@media only screen and (max-width: 767px)
+{
+    .navHebergements a, .navActivites a
+    {
+     width: 100%;
+     grid-row: 2;
+     position: relative;
+     left: 0px;
+     bottom: 0px;
+     top: 5px;
+     border-top: none;
+     padding-right: 0px;
+     padding-left: 0px;
+     display: grid;
+     justify-content: center;
+     border-bottom: 3px solid #F2F2F2;
+     padding-bottom: 15px;
+     padding-top: 25px;
+ }	
+}
+
+@media only screen and (max-width: 767px)
+{
+    .navActivites a
+    {
+     grid-column: 2
+ }	
+}
+
+@media only screen and (max-width: 767px)
+{
+    .inscription a
+    {
+     grid-column: 2;
+     grid-row: 1;
+     position: relative;
+     bottom: 5px;
+     left: 40px;
+ }	
+}
+
+@media screen and (max-width: 767px)
+{
+    .title
+    {
+     margin-left: 17px;
+     margin-right: 20px;
+ }	
 }
 /* Champ de recherche */
 
@@ -260,55 +275,61 @@ nav a
 }
 
 @media screen and (max-width: 767px)
-{#champDeRecherche
 {
-	margin-left: 20px;
-	display: flex;
-}	
+    #champDeRecherche
+    {
+     margin-left: 20px;
+     display: flex;
+ }	
 }
 
-@media only screen and (min-width: 375px) and (max-width: 767px)
-{#maRecherche
+@media only screen and (max-width: 767px)
 {
-	width: 70%;
-    max-width: 260px;
-    padding-left: 5%;
-}	
-}
-
-@media screen and (max-width: 767px)
-{.buttonSearch
-{
-	display: none;
-}	
+    #maRecherche
+    {
+     width: 70%;
+     max-width: 260px;
+     padding-left: 5%;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{.loupe
 {
-	display: flex;
-}	
+    .buttonSearch
+    {
+     display: none;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{.loupe
 {
-	border: none;
-    background-color: #0065fc;
-    z-index: 1;
-    border-radius: 15px;
-    padding: 19px;
-    color: white;
-    font-size: 18px;
-}	
+    .loupe
+    {
+     display: flex;
+ }	
 }
 
-@media only screen and (min-width: 375px) and (max-width: 767px)
-{.loupe
+@media screen and (max-width: 767px)
 {
-	position: relative;
-    right: 30px;
-}	
+    .loupe
+    {
+     border: none;
+     background-color: #0065fc;
+     z-index: 1;
+     border-radius: 15px;
+     padding: 19px;
+     color: white;
+     font-size: 18px;
+ }	
+}
+
+@media only screen and (max-width: 767px)
+{
+    .loupe
+    {
+     position: relative;
+     right: 30px;
+ }	
 }
 
 /* Filtres */
@@ -378,77 +399,103 @@ nav a
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#filtres
 {
-	display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}	
+    #filtres
+    {
+     display: flex;
+     flex-direction: column;
+     align-items: baseline;
+ }	
 }
 
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{#filtres
+@media only screen and (max-width: 767px)
 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}	
+    #filtres
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }	
 }
 
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{.ecoFamilial
+@media only screen and (max-width: 767px)
 {
-	margin-bottom: 15px;
-    width: 100%;
-    margin-left: -10px;
-}	
+    .ecoFamilial
+    {
+     margin-bottom: 15px;
+     width: 100%;
+     margin-left: -10px;
+ }	
 }
 
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{.romAnimaux
-{
-	display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}	
+@media only screen and (max-width: 375px)
+{   
+    .ecoFamilial
+    {
+        flex-direction: column;
+        max-width: fit-content;
+    }
+
+    .ecoFamilial div {
+        margin-bottom: 10px;
+    } 
+
+    .ecoFamilial div:first-child {
+        margin-bottom: 10px;
+    } 
 }
 
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{.ecoFamilial li
+@media only screen and (max-width: 767px)
 {
-	margin-right: -10px;
-}	
+    .romAnimaux
+    {
+     display: flex;
+     flex-direction: column;
+     align-items: baseline;
+ }	
 }
 
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{#filtres li
+@media only screen and (max-width: 767px)
 {
-	font-size: 16px;
-}	
+    .ecoFamilial li
+    {
+     margin-right: -10px;
+ }	
 }
 
-@media only screen and (min-width: 351px) and (max-width: 767px)
-{.romAnimaux li
+@media only screen and (max-width: 767px)
 {
-	margin-bottom: 15px;
-}	
+    #filtres li
+    {
+     font-size: 16px;
+ }	
+}
+
+@media only screen and (max-width: 767px)
+{
+    .romAnimaux li
+    {
+     margin-bottom: 15px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#filtres ul
 {
-	padding-left: 0px;
-	flex-wrap: wrap;
-}	
+    #filtres ul
+    {
+     padding-left: 0px;
+     flex-wrap: wrap;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{.romantique
 {
-	margin-bottom: 10px
+    .romantique
+    {
+     margin-bottom: 10px
 
-}	
+ }	
 }
 
 /* Information */
@@ -477,14 +524,15 @@ nav a
 }
 
 @media screen and (max-width: 767px)
-{#information
 {
-	display: flex;
-    align-items: baseline;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 60px;
-}	
+    #information
+    {
+     display: flex;
+     align-items: baseline;
+     margin-left: 20px;
+     margin-top: 20px;
+     margin-bottom: 60px;
+ }	
 }
 
 /* Hébergements + populaires */
@@ -680,152 +728,172 @@ nav a
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#tousLesHebergements
 {
-	flex-direction: column-reverse;
-    margin: 0px;
-    margin-right: 120px;
-}	
+    #tousLesHebergements
+    {
+     flex-direction: column-reverse;
+     margin: 0px;
+     margin-right: 120px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#hebergements
 {
-	width: 100%;
-    margin: 0px;
-    margin-left: 50px;
-    margin-top: 30px;
-    padding-bottom: 30px;
-}	
+    #hebergements
+    {
+     width: 100%;
+     margin: 0px;
+     margin-left: 50px;
+     margin-top: 30px;
+     padding-bottom: 30px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#populaires
 {
-	width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
-}	
+    #populaires
+    {
+     width: 100%;
+     margin-left: 50px;
+     margin-right: 50px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#populaires ul
 {
-	display: flex;
-    flex-direction: row;
+    #populaires ul
+    {
+     display: flex;
+     flex-direction: row;
 
-}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1160px)
-{#populaires li
-{
-	display: flex;
-    width: 33%
-
-}	
+ }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#populaires a
 {
-	flex-direction: column;
-}	
+    #populaires li
+    {
+     display: flex;
+     width: 33%
+
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#populaires img
 {
-	border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 0px;
-    object-fit: cover;
-    width: 100%;
-    height: 115px;
-}	
+    #populaires a
+    {
+     flex-direction: column;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#populaires p
 {
-	margin-bottom: 10px;
+    #populaires img
+    {
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+     border-bottom-left-radius: 0px;
+     object-fit: cover;
+     width: 100%;
+     height: 115px;
+ }	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px)
+{
+    #populaires p
+    {
+     margin-bottom: 10px;
+ }	
+}
+
+@media screen and (max-width: 767px)
+{
+    #tousLesHebergements
+    {
+     flex-direction: column-reverse;
+     margin-left: 0px;
+     margin-right: 20px;
+ }	
+}
+
+@media screen and (max-width: 767px)
+{
+    #hebergements
+    {
+     width: 100%;
+     background-color: white;
+     margin-bottom: 8px;
+ }	
+}
+
+@media screen and (max-width: 767px)
+{
+    #hebergements h2
+    {
+     margin-left: 10px;
+ }	
+}
+
+@media screen and (max-width: 767px)
+{
+    #hebergements ul
+    {
+     grid-template-columns: 1fr;
+     margin-left: 0px;
+     margin-right: 0px;
+ }	
+}
+
+@media screen and (max-width: 767px)
+{
+    #hebergements li
+    {
+     margin-bottom: 6px;
+ }
+ #hebergements
+ {
+    margin-right: 0;
 }	
 }
 
 @media screen and (max-width: 767px)
-{#tousLesHebergements
 {
-	flex-direction: column-reverse;
-    margin-left: 0px;
-    margin-right: 20px;
-}	
+    #populaires
+    {
+     width: 100%;
+     margin-left: 0px;
+     border-radius: 0px;
+     padding-bottom: 40px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#hebergements
 {
-	width: 100%;
-    background-color: white;
-    margin-bottom: 8px;
-}	
+    #iconePopulaire
+    {
+     margin-left: 10px;
+     margin-right: 10px;
+     margin-bottom: 20px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#hebergements h2
 {
-	margin-left: 10px;
-}	
+    #populaires ul
+    {
+     margin-left: 0px;
+     margin-right: 0px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#hebergements ul
 {
-	grid-template-columns: 1fr;
-    margin-left: 0px;
-    margin-right: 0px;
-}	
-}
-
-@media screen and (max-width: 767px)
-{#hebergements li
-{
-	margin-bottom: 6px;
-}	
-}
-
-@media screen and (max-width: 767px)
-{#populaires
-{
-	width: 100%;
-    margin-left: 0px;
-    margin-right: 20px;
-    border-radius: 0px;
-    padding-bottom: 40px;
-}	
-}
-
-@media screen and (max-width: 767px)
-{#iconePopulaire
-{
-	margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-}	
-}
-
-@media screen and (max-width: 767px)
-{#populaires ul
-{
-	margin-left: 0px;
-    margin-right: 0px;
-}	
-}
-
-@media screen and (max-width: 767px)
-{#populaires li
-{
-	margin-bottom: 5px;
-}	
+    #populaires li
+    {
+     margin-bottom: 5px;
+ }	
 }
 /* Activités */
 
@@ -907,191 +975,198 @@ nav a
     justify-content: space-between;
 }
 
-.fortPomegues img
+.petiteActivite img
 {
-	height: 180px;
-}
-
-.frioul img
-{
-	height: 120px;
-}
-
-.dameGarde img
-{
-	height: 120px;
-}
-
-.longchamp img
-{
-	height: 180px;
+	height: 150px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#activity
 {
-	margin-left: 30px;
-    margin-right: 0px;
-    margin-bottom: 45px;
-}	
+    #activity
+    {
+     margin-left: 30px;
+     margin-right: 0px;
+     margin-bottom: 45px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#activity h2
 {
-	margin-bottom: 30px;
-    margin-left: 20px;
-}	
+    #activity h2
+    {
+     margin-bottom: 30px;
+     margin-left: 20px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#activites
 {
-	width: 100%;
-    justify-content: space-between;
-}	
+    #activites
+    {
+     width: 100%;
+     justify-content: space-between;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#activites1, #activites2
 {
-	flex-direction: column;
-    width: 100%;
-}	
+    #activites1, #activites2
+    {
+     flex-direction: column;
+     width: 100%;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#activites1
 {
-	margin-left: 20px;
-    margin-right: 5px;
+    #activites1
+    {
+     margin-left: 20px;
+     margin-right: 5px;
 
-}	
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#activites2
 {
-	margin-left: 5px;
-	margin-right: 50px;
-}	
+    #activites2
+    {
+     margin-left: 5px;
+     margin-right: 50px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{.grandeActivite
 {
-	width: 100%;
-    margin-bottom: 30px;
-}	
+    .grandeActivite
+    {
+     width: 100%;
+     margin-bottom: 30px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#activites1, .grandeActivite
 {
-	margin-right: 0px;
-}	
+    #activites1, .grandeActivite
+    {
+     margin-right: 0px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{.grandeActivite img, #columnActivity img
 {
-	height: 145px;
-}	
+    .grandeActivite img, #columnActivity img
+    {
+     height: 145px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#columnActivity
 {
-	width: 100%;
-}	
+    #columnActivity
+    {
+     width: 100%;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{.fortPomegues,.frioul,.dameGarde,.longchamp
 {
-	margin-bottom: 30px;
-}	
+    .fortPomegues,.frioul,.dameGarde,.longchamp
+    {
+     margin-bottom: 30px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#columnActivity, #activites2
 {
-	margin-left: 0px;
-}	
+    #columnActivity, #activites2
+    {
+     margin-left: 0px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#activity
 {
-	margin-left: 20px;
-    margin-right: 0px;
-    margin-bottom: 45px;
-}	
+    #activity
+    {
+     margin-left: 20px;
+     margin-right: 0px;
+     margin-bottom: 45px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#activity h2
 {
-	margin-bottom: 30px;
-}	
+    #activity h2
+    {
+     margin-bottom: 30px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#activites, #activites1, #activites2
 {
-	flex-direction: column;
-}	
+    #activites, #activites1, #activites2
+    {
+     flex-direction: column;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#activites1, .grandeActivite
 {
-	margin-right: 0px;
-}	
+    #activites1, .grandeActivite
+    {
+     margin-right: 0px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{.grandeActivite, #columnActivity
 {
-	width: 100%
-}	
+    .grandeActivite, #columnActivity
+    {
+     width: 100%
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#activites2
 {
-	margin-right: 20px;
-}	
+    #activites2
+    {
+     margin-right: 20px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#columnActivity, #activites2
 {
-	margin-left: 0px;
-}	
+    #columnActivity, #activites2
+    {
+     margin-left: 0px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{.grandeActivite img, #columnActivity img
 {
-	height: 145px;
-}	
+    .grandeActivite img, #columnActivity img
+    {
+     height: 145px;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#activites li
 {
-	margin-bottom: 20px;
+    #activites li
+    {
+     margin-bottom: 20px;
 
-}	
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#activites ul
 {
-	display: block;
+    #activites ul
+    {
+     display: block;
 
-}	
+ }	
 }
 /* Footer */
 
@@ -1151,33 +1226,44 @@ footer a
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
 {footer
-{
-	margin-top: 0px;
-}	
+    {
+     margin-top: 0px;
+ }	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1160px)
-{#dispositionFooter
 {
-	width: 85%;
-}	
+    #dispositionFooter
+    {
+     width: 85%;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#dispositionFooter
 {
-	padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-}	
+    #dispositionFooter
+    {
+     padding-left: 10px;
+     display: flex;
+     flex-direction: column;
+ }	
 }
 
 @media screen and (max-width: 767px)
-{#assistance
 {
-	position: relative;
-    left: 0px;
-}	
+    #assistance
+    {
+    	position: relative;
+        left: 0px;
+    }
+    #filtres a
+    {
+        margin-right: 10px;
+    }
+
+    .ecoFamilial {
+        margin-left: 0;
+    }
 }
 /* Toutes les images */
 
