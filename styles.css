@@ -78,6 +78,12 @@ nav li
     padding-right: 5px;
 }
 
+.navHebergements a:hover ,.navActivites a:hover
+{
+	color: #0065FC;
+	border-color: #0065FC;
+}
+
 .inscription a
 {
 	color: #0065FC;
@@ -85,7 +91,7 @@ nav li
 nav a
 {
 	text-decoration: none;
-	padding-top: 45px;
+	padding-top: 33px;
 }
 
 @media screen and (max-width: 767px)
@@ -851,6 +857,7 @@ nav a
     #hebergements li
     {
      margin-bottom: 6px;
+     margin-left: -15px;
  }
  #hebergements
  {
@@ -893,6 +900,7 @@ nav a
     #populaires li
     {
      margin-bottom: 5px;
+     margin-left: -25px;
  }	
 }
 /* Activités */
